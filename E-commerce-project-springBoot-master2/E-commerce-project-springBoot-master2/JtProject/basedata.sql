@@ -14,13 +14,8 @@ name        varchar(255) null
 # insert default categories
 INSERT INTO CATEGORY(name) VALUES ('Fruits'),
                                   ('Vegetables'),
-                                  ('Meat'),
-                                  ('Fish'),
-                                  ('Dairy'),
-                                  ('Bakery'),
-                                  ('Drinks'),
-                                  ('Sweets'),
-                                  ('Other');
+                                 
+                                  
 
 # create the customer table
 CREATE TABLE IF NOT EXISTS CUSTOMER(
@@ -34,8 +29,8 @@ username varchar(255) null
 
 # insert default customers
 INSERT INTO CUSTOMER(address, email, password, role, username) VALUES
-                                                                   ('123, Albany Street', 'admin@nyan.cat', '123', 'ROLE_ADMIN', 'admin'),
-                                                                   ('765, 5th Avenue', 'lisa@gmail.com', '765', 'ROLE_NORMAL', 'lisa');
+                                                                   ('123, xyz', 'h@k.com', '123', 'ROLE_ADMIN', 'h'),
+                                                                   ('321, zyx', 'hi@gmail.com', '555', 'ROLE_NORMAL', 'hi');
 
 # create the product table
 CREATE TABLE IF NOT EXISTS PRODUCT(
@@ -52,8 +47,8 @@ customer_id int null
 
 # insert default products
 INSERT INTO PRODUCT(description, image, name, price, quantity, weight, category_id) VALUES
-                                                                                        ('Fresh and juicy', 'https://freepngimg.com/save/9557-apple-fruit-transparent/744x744', 'Apple', 3, 40, 76, 1),
-                                                                                        ('Woops! There goes the eggs...', 'https://www.nicepng.com/png/full/813-8132637_poiata-bunicii-cracked-egg.png', 'Cracked Eggs', 1, 90, 43, 9);
+                                                                                        ('Fresh', 'https://freepngimg.com/save/9557-apple-fruit-transparent/744x744', 'Apple', 3, 40, 76, 1),
+                                                                                        ('oops! ', 'https://www.nicepng.com/png/full/813-8132637_poiata-bunicii-cracked-egg.png', 'Cracked Eggs', 1);
 
 
 # create indexes
