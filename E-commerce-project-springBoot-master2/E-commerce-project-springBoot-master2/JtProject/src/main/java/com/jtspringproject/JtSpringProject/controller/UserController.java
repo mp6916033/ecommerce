@@ -113,23 +113,23 @@ public class UserController{
 	
 	
 	
-	   //for Learning purpose of model
+	 
 		@GetMapping("/test")
 		public String Test(Model model)
 		{
 			System.out.println("test page");
-			model.addAttribute("author","jay gajera");
-			model.addAttribute("id",40);
+			model.addAttribute("author","Manas");
+			model.addAttribute("id",0);
 			
 			List<String> friends = new ArrayList<String>();
 			model.addAttribute("f",friends);
-			friends.add("xyz");
-			friends.add("abc");
+			friends.add("test....1");
+			friends.add("test....2");
 			
 			return "test";
 		}
 		
-		// for learning purpose of model and view ( how data is pass to view)
+		
 		
 		@GetMapping("/test2")
 		public ModelAndView Test2()
@@ -137,8 +137,8 @@ public class UserController{
 			System.out.println("test page");
 			//create modelandview object
 			ModelAndView mv=new ModelAndView();
-			mv.addObject("name","jay gajera 17");
-			mv.addObject("id",40);
+			mv.addObject("name","Manas");
+			mv.addObject("id",0);
 			mv.setViewName("test2");
 			
 			List<Integer> list=new ArrayList<Integer>();
